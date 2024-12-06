@@ -54,9 +54,14 @@ background-color: transparent
     height: auto;
 }
 .summonlogo{
-    width: 200px;
+    width: 150px;
     height: auto;
 }
+.summonqr{
+    width: 300px;
+    height: auto;
+}
+
 
 .chau{font-family: 'Chau'}
 .itchau{font-family: 'Chau'}

@@ -60,7 +60,7 @@
   <div class="divisor" id="herramientas"></div>
 
   <div class="divnegro ">
-    <div class=" container col-xl-10 col-xxl-8 px-4 py-5" >
+    <div class=" container col-xl-12 col-xxl-12 px-4 py-5" >
       <div class="row align-items-center ">
         <div class="center overx">
           <img src="{% static 'img/funcion1.png' %}" class="funcionimg img-fluid" alt="img" loading="lazy">
@@ -111,7 +111,7 @@
   </div>
 
   <div class="divisor" id="descargar"></div>
-
+  {% load user_agents %}
   <div class="divnegro text-secondary px-4 py-5 text-center">
     <div class="py-5">
       
@@ -120,15 +120,18 @@
         <h3 class="sombraV blanco chau"> Descarga SUMMON APP, ¡AVENTURATE A LAS CATACUMBAS!</h3>
         {% if request.user_agent.is_mobile %}
         <div>
-          
+          <img class="d-block mx-auto mb-4 summonlogo" src="{% static 'img/logo.png' %}" alt="logo">
+          <a href="https://github.com/HIDKcode/SummonWeb/tree/master/SummonWeb/summon.apk" class="blanco sombraV"> Link de descarga </a>
         </div>
         {% endif %}
         {% if request.user_agent.is_pc %}
         <div>
           
+          
+          <img class="d-block mx-auto mb-4 summonqr" src="{% static 'img/qr.png' %}" alt="logo">
         </div>
-        {% endif %}
-        <H4 CLASS="dorado chau"> Solo disponible en Android</H4>
+        {% endif %} 
+        <H4 CLASS="dorado chau"> Solo disponible para Android</H4>
       </div>
 
     </div>
