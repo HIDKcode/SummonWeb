@@ -119,3 +119,8 @@ font-size: 18px;
     overflow-y: auto;
     max-height: 60vh;
 }
+
+.summonfooter{
+   background-color: #0d271e; 
+   min-height: 20vh;
+}
